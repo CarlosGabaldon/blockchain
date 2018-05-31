@@ -155,6 +155,7 @@ func respondWithJSON(w http.ResponseWriter, r *http.Request, code int, payload i
 }
 
 func main() {
+	// Access at http://localhost:8080/
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal(err)
