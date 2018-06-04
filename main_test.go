@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestcalculateHash(t *testing.T) {
+func TestCalculateHash(t *testing.T) {
 	block := createBlock(1)
 	result := calculateHash(block)
 	if result == "" {
@@ -13,7 +13,7 @@ func TestcalculateHash(t *testing.T) {
 	}
 }
 
-func TestgenerateBlock(t *testing.T) {
+func TestGenerateBlock(t *testing.T) {
 	prevBlockIndex := 2
 	bpm := 60
 	block := createBlock(prevBlockIndex)
@@ -28,7 +28,7 @@ func TestgenerateBlock(t *testing.T) {
 
 }
 
-func TestisBlockValid(t *testing.T) {
+func TestIsBlockValid(t *testing.T) {
 	block := createBlock(1)
 	nextBlock, _ := generateBlock(block, 60)
 
